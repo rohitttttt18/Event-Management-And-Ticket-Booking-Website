@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins' , sans-serif;
+        }
+
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(grey.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 0 8%;
+            position: relative;
+        }
+        nav{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 5px 0;
+        }
+        .welcome{
+            width: 150px;
+            color:white;
+        }
+        nav ul{
+            flex: 1;
+            text-align: right;
+            padding-right: 30px;
+        }
+        nav ul li{
+            display: inline-block;
+            list-style: none;
+            margin: 10PX 30PX;
+        }
+        nav ul li a{
+            color: #fff;
+            text-decoration: none;
+            position: relative;
+        }
+        nav ul li a::after{
+            content: '';
+            width: 0;
+            height: 3px;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fff;
+            transition: width 0.3s;
+        }
+        nav ul li a:hover::after{
+            width:50%;
+        }
+        .event-management{
+            margin-top: 100px;
+            margin-left: -100px;
+
+        }
+        .content{
+            position: absolute;
+            margin-top: -450px;
+            margin-left: 590px;        
+        }
+        .content p{
+            font-size: 18px;
+        }
+        .content ul li{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1 class="welcome" style="font-family: cursive; font-size: 32px;">About</h1>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="organize.html">Organize</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="event-management">
+            <img src="event management.jpg" style="width: 670px; height: 400px;">
+        </div>
+        <div class="content">
+            <p>We are passionate about creating extraordinary experiences that bring people together. We believe that life is meant to be savored, and that every moment has the potential to be magical. With our expertise in event management and ticket booking, we're here to help you make the most of every occasion, from exhilarating concerts and thrilling sporting events to captivating movies and joyous celebrations.
+                <br><br>
+                We have a team of experienced event professionals who are passionate about helping our clients create and execute successful events. We are committed to providing our clients with the highest level of service and support.
+                <br><br>
+                Our mission is to simplify the event planning and ticket booking process, making it effortless for you to discover, explore, and immerse yourself in a world of unforgettable experiences. We are committed to providing a seamless and user-friendly platform where you can browse a vast array of events, secure your tickets.
+                <br><br>
+                We take pride in our team of experienced event professionals who possess a deep understanding of the industry and are dedicated to delivering exceptional service. Our expertise extends across a wide spectrum of events, including:
+                <ul class="text1"><br>
+                <li>Movies</li>
+                <li>Concerts</li>
+                <li><a href="events.html" style="text-decoration: none;">Click Here To View More...</a></li>
+                
+                </ul></p>
+                <br>
+                <p>
+                Whether you're seeking the electrifying energy of a live concert, the thrill of a sporting event, the enchantment of a captivating movie, or the joy of a memorable celebration, we invite you to join us on your journey of unforgettable experiences.you're not just booking tickets; you're opening the door to a world of possibilities, where every moment has the potential to be extraordinary.</p>
+            </p>
+        </div>
+        </div>
+</body>
+</html>

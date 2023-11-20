@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'poppins' , sans-serif;
+    }
+
+    body{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(grey\ background.avif);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        padding: 0 8%;
+        position: relative;
+    }
+    nav{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 5px 0;
+    }
+    .welcome{
+        width: 150px;
+        color:white;
+    }
+    nav ul{
+        flex: 1;
+        text-align: right;
+        padding-right: 30px;
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10PX 30PX;
+    }
+    nav ul li a{
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+    }
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #fff;
+        transition: width 0.3s;
+    }
+    nav ul li a:hover::after{
+        width:50%;
+    }
+    .movies h2{
+  font-size:50px;
+  margin-top:25px;
+  margin-left:-110px;
+  font-family:Tahoma;
+}
+
+.cards{
+  width:19%;
+  background-color:grey;
+  border-radius:5px;
+  margin:40px;
+  display:inline-block;
+  margin-left:33px;
+
+}
+
+.cards:hover{
+  box-shadow:2px 2px 10px black;
+}
+.image img{
+  width:100%;
+  border-top-right-radius:5px;
+  border-top-left-radius:5px;
+}
+.title{
+  text-align:center;
+  padding:5px;
+  }
+.des{
+  text-align:center;
+  padding:4px;
+}
+button{
+  margin-top:10px;
+  margin-bottom:10px;
+  background-color:white;
+  border:1px solid black;
+  padding:8px;
+  border-radius:8px;
+  cursor:pointer;
+  color: black;
+  font-weight: bold;
+}
+.des button:hover{
+  background-color:black;
+  transition:1s;
+  color: white;
+}
+.des a:hover{
+  color:white;
+  transition:1s;
+}
+body{
+  font-family:Arial;
+}
+
+    </style>
+</head>
+<body>
+        <nav>
+            <h1 class="welcome" style="font-family: cursive; font-size: 32px;">Events</h1>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="organize.html">Organize</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="movies">
+            <h2>Movies</h2>
+            </div>
+        <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/tiger-3-et00313411-1698386589.jpg">
+            </div>
+            <div class="title">
+              <h3>Tiger 3</h3>
+            </div>
+            <div class="des">
+              <p>Action/Thriller</p>
+              <a href="https://in.bookmyshow.com/jalandhar/movies/tiger-3/ET00313411" target="_blank" style="text-decoration:none;">
+                <button>BOOK NOW</button>
+                
+              </a>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/12th-fail-et00363787-1698316138.jpg">
+            </div>
+            <div class="title">
+              <h3>12th Fail</h3>
+            </div>
+            <div class="des">
+              <p>Drama</p>
+              <a href="https://in.bookmyshow.com/jalandhar/movies/12th-fail/ET00363787" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+              </a>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/trolls-band-together-et00363189-1697017186.jpg">
+            </div>
+            <div class="title">
+              <h3>Trolls Band Together</h3>
+            </div>
+            <div class="des">
+              <p>Animation/Comedy/Fantasy</p>
+              <a href="https://in.bookmyshow.com/jalandhar/movies/trolls-band-together/ET00363189" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+              </a>
+            </div>
+          </div>
+          
+          
+          
+          
+          
+          
+          <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/khichdi-2-et00368865-1698646979.jpg">
+            </div>
+            <div class="title">
+              <h3>Khichdi 2</h3>
+            </div>
+            <div class="des">
+              <p>Adventure/Comedy</p>
+              <a href="https://in.bookmyshow.com/jalandhar/movies/khichdi-2/ET00368865" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+              </a>
+            </div>
+          </div>
+          <div class="movies">
+          <h2>Concerts</h2>
+          </div>
+          
+        <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxNiBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00373677-fdaqdezhdb-portrait.jpg">
+            </div>
+            <div class="title">
+              <h3>Ed Sheeran: +–=÷× Tour</h3>
+            </div>
+            <div class="des">
+              <p>&#128205; Mumbai</p>
+              <p>Music Show</p>
+              <a href="https://in.bookmyshow.com/events/ed-sheeran-tour/ET00373677" target="_blank" style="text-decoration:none;">
+            <button>BOOK NOW</button>
+              </a>
+            </div>
+          </div>
+        
+       <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAzIERlYw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00369835-rhtwpgytat-portrait.jpg">
+            </div>
+            <div class="title">
+              <h3>KING New Life India Tour</h3>
+            </div>
+            <div class="des">
+              <p>&#128205;Delhi</p>
+              <p>Music Show</p>
+              <a href="https://in.bookmyshow.com/events/king-new-life-india-tour-by-ti-live-delhi-ncr/ET00369835" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+              </a>
+            </div>
+          </div>
+        
+          
+          
+          <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCAyNyBOb3Y%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00366779-wmbvpbtjbx-portrait.jpg">
+            </div>
+            <div class="title">
+              <h3>Sunburn Arena</h3>
+            </div>
+            <div class="des">
+              <p>&#128205;Delhi</p>
+              <p>EDM</p>
+              <a href="https://in.bookmyshow.com/events/sunburn-arena-ft-dimitri-vegas-like-mike-delhincr/ET00366779" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+              </a>
+            </div>
+          </div>
+        
+          <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyNSBOb3Ygb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00371278-khwwbzhlnl-portrait.jpg">
+            </div>
+            <div class="title">
+              <h3>The Burrah Project</h3>
+            </div>
+            <div class="des">
+              <p>&#128205;Delhi</p>
+              <p>Music Show</p>
+                <a href="https://in.bookmyshow.com/events/the-burrah-project/ET00371278" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+              </a>
+            </div>
+          </div>
+        <div class="movies">
+          <h2>Sports</h2>
+          </div>
+        <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxOCBOb3Y%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00375439-vvaakkdxlh-portrait.jpg">
+            </div>
+            <div class="title">
+              <h3>Red Bull M.E.O. Season 6</h3>
+            </div>
+            <div class="des">
+              <p>&#128205;Delhi</p>
+              <p>E-Sports</p>
+              <a href="https://in.bookmyshow.com/sports/red-bull-m-e-o-season-6/ET00375439" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+              </a>
+            </div>
+          </div>
+        
+         <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VHVlLCAyOCBOb3Y%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00375235-guunzuxdwe-portrait.jpg">
+            </div>
+            <div class="title">
+              <h3>India vs Australia - 3rd T20I</h3>
+            </div>
+            <div class="des">
+              <P>&#128205;Guwahati</p>
+              <p>Cricket</p>
+            <a href="https://in.bookmyshow.com/sports/india-vs-australia-3rd-t20i/ET00375235" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+           </a>
+            </div>
+          </div>
+         <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-V2VkLCAyMCBEZWM%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00370544-ndwmuqclbx-portrait.jpg">
+            </div>
+            <div class="title">
+              
+              <h3>Mumbai City FC vs Mohun Bagan Super Giant</h3>
+            </div>
+            <div class="des">
+              <p>&#128205;Mumbai</p>
+              <p>Football</p>
+               <a href="https://in.bookmyshow.com/sports/mumbai-city-fc-vs-mohun-bagan-super-giant/ET00370544" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+              </a>
+            </div>
+          </div>
+        
+         <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyNiBOb3Y%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00354868-amatwcwlyf-portrait.jpg">
+            </div>
+            <div class="title">
+              <h3>All India Blitz Chess Championship</h3>
+            </div>
+            <div class="des">
+              <p>&#128205;Online-Zoom</p>
+              <p>Chess</p>
+               <a href="https://in.bookmyshow.com/sports/all-india-blitz-chess-championship/ET00354868" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+                 </a>
+            </div>
+          </div>
+         <div class="movies">
+          <h2>Comedy</h2>
+          </div>
+        <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCA2IERlYyBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00373682-wdtmcqnand-portrait.jpg">
+            </div>
+            <div class="title">
+              <h3>Abhishek Upmanyu LIVE India Tour 2024-25</h3>
+            </div>
+            <div class="des">
+              <p>&#128205;Bengaluru</p>
+              <p>Stand Up Comedy</p>
+               <a href="https://in.bookmyshow.com/events/abhishek-upmanyu-live/ET00373706" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+              </a>
+            </div>
+          </div>
+        <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyMyBEZWM%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00355125-wecjerjhby-portrait.jpg">
+            </div>
+            <div class="title">
+              <h3>Kisi Ko Batana Mat Ft. Anubhav Singh Bassi</h3>
+            </div>
+            <div class="des">
+             <p>&#128205;Kota</p>
+             <p>Stand Up Comedy</p>
+               <a href="https://in.bookmyshow.com/ahmedabad/events/anubhav-singh-bassi-new-material/ET00355125/bookingStep/tickets?city=Kota&date=20231216&time=1800&venueCode=UIAK" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+              </a>
+            </div>
+          </div>
+        <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyNSBOb3Ygb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00360338-ekwtaettbe-portrait.jpg">
+            </div>
+            <div class="title">
+              <h3>Mumbaiya - Hindi Stand-up & Crowd work solo</h3>
+            </div>
+            <div class="des">
+              <p>&#128205;Mumbai</p>
+              <p>Stand Up Comedy</p>
+               <a href="https://in.bookmyshow.com/events/mumbaiya-a-stand-up-crowd-work-solo/ET00360338" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+              </a>
+            </div>
+          </div>
+         <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMCBEZWM%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00145294-vhpyafguac-portrait.jpg">
+            </div>
+            <div class="title">
+              <h3>Jo Bolta Hai Wohi Hota Hai feat Harsh Gujral</h3>
+            </div>
+            <div class="des">
+              <p>&#128205;Kanpur</p>
+              <p>Stand Up Comedy</p>
+               <a href="https://in.bookmyshow.com/mumbai/events/jo-bolta-hai-wohi-hota-hai-feat-harsh-gujral/ET00145294/bookingStep/tickets?city=Kanpur&date=20231214&time=1930&venueCode=RSCP" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+              </a>
+            </div>
+          </div>
+        
+        <div class="movies">
+          <h2>Activities</h2>
+          </div>
+        <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxOSBOb3Ygb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00022344-mqhjymethc-portrait.jpg">
+            </div>
+            <div class="title">
+              <h3>Mumbai Filmcity Tour with Bollywood Park</h3>
+            </div>
+            <div class="des">
+               <p>&#128205;Mumbai</p>
+              <p>Theme Park</p>
+               <a href="https://in.bookmyshow.com/activities/mumbai-filmcity-tour/ET00022344" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+              </a>
+            </div>
+          </div>
+        <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAyNCBOb3Ygb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00371599-yfaucstckz-portrait.jpg">
+            </div>
+            <div class="title">
+              <h3>Mumbai Coffee Festival at Jio World Drive</h3>
+            </div>
+            <div class="des">
+              <p>&#128205;Mumbai</p>
+              <p>Food Festival</p>
+               <a href="https://in.bookmyshow.com/activities/mumbai-coffee-festival/ET00371599" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+              </a>
+            </div>
+          </div>
+        
+        <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxOSBOb3Y%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00372606-gvfpdbnxcy-portrait.jpg">
+            </div>
+            <div class="title">
+              <h3>Play Station Center:The Future Of Gaming</h3>
+            </div>
+            <div class="des">
+              <P>&#128205;Chennai</p>
+              <p>Simulation</p>
+           <a href="https://in.bookmyshow.com/activities/play-station-center/ET00372606" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+          </a>
+            </div>
+          </div>
+        <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxOCBOb3Ygb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00339284-djgzucpwzg-portrait.jpg">
+            </div>
+            <div class="title">
+              <h3>Lenin Cruises Dinner With Sail</h3>
+            </div>
+            <div class="des">
+              <P>&#128205;Kolkata</p>
+              <p>Food and Drinks</p>
+           <a href="https://in.bookmyshow.com/activities/dinner-with-sail/ET00339284" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+          </a>
+            </div>
+          </div>
+        
+        
+         <div class="movies">
+          <h2>Plays</h2>
+          </div>
+         <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-V2VkLCAyOSBOb3Ygb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00369789-bamuvyghlu-portrait.jpg">
+            </div>
+            <div class="title">
+              <h3>MAMMA MIA!</h3>
+            </div>
+            <div class="des">
+               <P>&#128205;Mumbai</p>
+              <p>Drama</p>
+              <a href="https://in.bookmyshow.com/plays/mamma-mia/ET00369789" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+              </a>
+            </div>
+          </div>
+         <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMCBEZWM%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00375061-wmxjekpsyj-portrait.jpg">
+            </div>
+            <div class="title">
+              <h3>Manam Theatre Festival</h3>
+            </div>
+            <div class="des">
+               <P>&#128205;Hyderabad</p>
+              <p>Historical, Political, War</p>
+              <a href="https://in.bookmyshow.com/plays/manam-theatre-festival-afghanistan-is-not-funny/ET00375061" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+              </a>
+            </div>
+          </div>
+        <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxOCBOb3Y%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00374463-clfmjzbrvg-portrait.jpg">
+            </div>
+            <div class="title">
+              <h3>Flashback:Unearth Your Treasured Memories</h3>
+            </div>
+            <div class="des">
+               <P>&#128205;Chennai</p>
+              <p>Historical, Political, War</p>
+              <a href="https://in.bookmyshow.com/plays/flashback-unearth-your-treasured-memories/ET00374463" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+              </a>
+            </div>
+          </div>
+        <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxNyBEZWMgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00374772-eaqnbbahrs-portrait.jpg">
+            </div>
+            <div class="title">
+              <h3>Kahaniyan Sunata Hun </h3>
+            </div>
+            <div class="des">
+               <P>&#128205;Pune</p>
+              <p>Drama, musical</p>
+              <a href="https://in.bookmyshow.com/national-capital-region-ncr/plays/kahaniyan-sunata-hun-feat-neelesh-misra/ET00374772/bookingStep/tickets?city=Pune&date=20231216&time=1800&venueCode=BJRP" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+              </a>
+            </div>
+          </div>
+</body>
+</html>
